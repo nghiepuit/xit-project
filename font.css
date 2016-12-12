@@ -1,0 +1,16 @@
+@font-face {
+    font-family: HelveticacondensedBlack;
+    src: url(font/HelveticaNeue-CondensedBlack.otf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(font/HelveticaNeue.otf);
+}
+@font-face {
+    font-family: MyriadPro;
+    src: url(font/MyriadPro.otf);
+}
+@font-face {
+    font-family: Helvetica-condenBold;
+    src: url(font/HelveticaNeue-CondensedBold.otf);
+}

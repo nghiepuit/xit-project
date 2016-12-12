@@ -1,0 +1,120 @@
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container{
+    position: relative;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-button-prev{
+    background-image: url(img/Hosting/BtnPrev.png);
+    width: 74px;
+    height: 120px;
+}
+.swiper-button-next{
+    background-image: url(img/Hosting/BtnNext.png);
+    width: 74px;
+    height: 120px;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.wrapper_content_slide .thumbnail{
+    position: absolute;
+    z-index: 9999;
+    top: 13%;
+    left: 57%;
+    width: 373px;
+    background: transparent !important;
+    border:none !important;
+
+}
+.content_slide_button{
+    border-radius: 5px;
+    position: absolute;
+    z-index: 9999;
+    top:62%;
+    right: 27%;
+    text-align: center;
+    width: 140px;
+    line-height: 40px;
+    background-color: #ee8229;
+}
+.content_slide_button div{
+    font-size: 20px;
+
+}
+.content_slide_button div a{
+    text-decoration: none;
+    color: black;
+}
+.wrapper_content_slide .thumbnail .content_slide_title{
+    text-align: center;
+    font-size: 30px;
+    font-family: Helvetica-condenBold;
+}
+.wrapper_content_slide .thumbnail .content_slide_noidung{
+    text-align: left;
+}
+.content_slide_title p{
+    margin: 0 0;
+    color:black;
+    font-family: Helvetica-condenBold;
+
+}
+.content_slide_noidung{
+    margin-top: 20px;
+
+}
+@media only screen and (min-width:705px) and (max-width: 1020px) {
+    .wrapper_content_slide .thumbnail{
+        left: 40% !important;
+    }
+    .content_slide_button{
+        top:80%;
+    }
+}
+@media only screen and (min-width:400px) and (max-width: 718px){
+    .content_slide_button{
+        top:80%;
+        right: 2%;
+    }
+}
+@media only screen and (max-width:705px) {
+    .wrapper_content_slide .thumbnail{
+        left: 10% !important;
+    }
+}

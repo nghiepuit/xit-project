@@ -1,0 +1,12 @@
+.inline .tags{
+	width: 100%;
+}
+.inline {
+	padding: 0;
+}
+.ViewTable .CaptionTD{
+	width: 30%;
+}
+.ui-widget{
+	padding-left: 12px;
+}

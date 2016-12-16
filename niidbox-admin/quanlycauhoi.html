@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8" />
+	<title>Top Menu Style - Ace Admin</title>
+
+	<meta name="description" content="top menu &amp; navigation" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" href="assets/css/daterangepicker.min.css" />
+	<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
+	<!-- bootstrap & fontawesome -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+	<!-- page specific plugin styles -->
+	<link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="assets/css/bootstrap-datepicker3.min.css" />
+	<link rel="stylesheet" href="assets/css/ui.jqgrid.min.css" />
+	<link rel="stylesheet" href="assets/css/bootstrap-multiselect.min.css" />
+
+	<!-- text fonts -->
+	<link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
+
+	<!-- ace styles -->
+	<link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+	<!--[if lte IE 9]>
+			<link rel="stylesheet" href="assets/css/ace-part2.min.css" class="ace-main-stylesheet" />
+		<![endif]-->
+	<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+	<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+	<link rel="stylesheet" href="assets/css/customcss.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/quanlycauhoi.css">
+
+	<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+	<!-- inline styles related to this page -->
+
+	<!-- ace settings handler -->
+	<script src="assets/js/ace-extra.min.js"></script>
+
+	<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+	<!--[if lte IE 8]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+	<body class="no-skin">
+		<div id="navbar" class="navbar navbar-default navbar-collapse h-navbar ace-save-state">
+			<div class="navbar-container ace-save-state" id="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="index.html" class="navbar-brand">
+						<small>
+							<i class="fa fa-leaf"></i>
+							NiidBox Admin
+						</small>
+					</a>
+
+					<button class="pull-right navbar-toggle navbar-toggle-img collapsed" type="button" data-toggle="collapse" data-target=".navbar-buttons,.navbar-menu">
+						<span class="sr-only">Toggle user menu</span>
+
+						<img src="assets/images/avatars/user.jpg" alt="Jason's Photo" />
+					</button>
+
+					<button class="pull-right navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#sidebar">
+						<span class="sr-only">Toggle sidebar</span>
+
+						<span class="icon-bar"></span>
+
+						<span class="icon-bar"></span>
+
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="navbar-buttons navbar-header pull-right  collapse navbar-collapse" role="navigation">
+					<ul class="nav ace-nav">
+						<!-- <! <! <! <!<li class="transparent dropdown-modal">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="ace-icon fa fa-bell icon-animated-bell"></i>
+							</a>
+
+							<div class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<div class="tabbable">
+									<ul class="nav nav-tabs">
+										<li class="active">
+											<a data-toggle="tab" href="#navbar-tasks">
+												Tasks
+												<span class="badge badge-danger">4</span>
+											</a>
+										</li>
+
+										<li>
+											<a data-toggle="tab" href="#navbar-messages">
+												Messages
+												<span class="badge badge-danger">5</span>
+											</a>
+										</li>
+									</ul><!.nav-tabs -->
+
+									<!-- <div class="tab-content">
+										<div id="navbar-tasks" class="tab-pane in active">
+											<ul class="dropdown-menu-right dropdown-navbar dropdown-menu">
+												<li class="dropdown-content">
+													<ul class="dropdown-menu dropdown-navbar">
+														<li>
+															<a href="#">
+																<div class="clearfix">
+																	<span class="pull-left">Software Update</span>
+																	<span class="pull-right">65%</span>
+																</div>
+
+																<div class="progress progress-mini">
+																	<div style="width:65%" class="progress-bar"></div>
+																</div>
+															</a>
+														</li>
+
+														<li>
+															<a href="#">
+																<div class="clearfix">
+																	<span class="pull-left">Hardware Upgrade</span>
+																	<span class="pull-right">35%</span>
+																</div>
+
+																<div class="progress progress-mini">
+																	<div style="width:35%" class="progress-bar progress-bar-danger"></div>
+																</div>
+															</a>
+														</li>
+
+														<li>
+															<a href="#">
+																<div class="clearfix">
+																	<span class="pull-left">Unit Testing</span>
+																	<span class="pull-right">15%</span>
+																</div>
+
+																<div class="progress progress-mini">
+																	<div style="width:15%" class="progress-bar progress-bar-warning"></div>
+																</div>
+															</a>
+														</li>
+
+														<li>
+															<a href="#">
+																<div class="clearfix">
+																	<span class="pull-left">Bug Fixes</span>
+																	<span class="pull-right">90%</span>
+																</div>
+
+																<div class="progress progress-mini progress-striped active">
+																	<div style="width:90%" class="progress-bar progress-bar-success"></div>
+																</div>
+															</a>
+														</li>
+													</ul>
+												</li>
+
+												<li class="dropdown-footer">
+													<a href="#">
+														See tasks with details
+														<i class="ace-icon fa fa-arrow-right"></i>
+													</a>
+												</li>
+											</ul>
+										</div><! /.tab-pane -->
+
+										<!-- <div id="navbar-messages" class="tab-pane">
+											<ul class="dropdown-menu-right dropdown-navbar dropdown-menu">
+												<li class="dropdown-content">
+													<ul class="dropdown-menu dropdown-navbar">
+														<li>
+															<a href="#">
+																<img src="assets/images/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+																<span class="msg-body">
+																	<span class="msg-title">
+																		<span class="blue">Alex:</span>
+																		Ciao sociis natoque penatibus et auctor ...
+																	</span>
+
+																	<span class="msg-time">
+																		<i class="ace-icon fa fa-clock-o"></i>
+																		<span>a moment ago</span>
+																	</span>
+																</span>
+															</a>
+														</li>
+
+														<li>
+															<a href="#">
+																<img src="assets/images/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+																<span class="msg-body">
+																	<span class="msg-title">
+																		<span class="blue">Susan:</span>
+																		Vestibulum id ligula porta felis euismod ...
+																	</span>
+
+																	<span class="msg-time">
+																		<i class="ace-icon fa fa-clock-o"></i>
+																		<span>20 minutes ago</span>
+																	</span>
+																</span>
+															</a>
+														</li>
+
+														<li>
+															<a href="#">
+																<img src="assets/images/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+																<span class="msg-body">
+																	<span class="msg-title">
+																		<span class="blue">Bob:</span>
+																		Nullam quis risus eget urna mollis ornare ...
+																	</span>
+
+																	<span class="msg-time">
+																		<i class="ace-icon fa fa-clock-o"></i>
+																		<span>3:15 pm</span>
+																	</span>
+																</span>
+															</a>
+														</li>
+
+														<li>
+															<a href="#">
+																<img src="assets/images/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar" />
+																<span class="msg-body">
+																	<span class="msg-title">
+																		<span class="blue">Kate:</span>
+																		Ciao sociis natoque eget urna mollis ornare ...
+																	</span>
+
+																	<span class="msg-time">
+																		<i class="ace-icon fa fa-clock-o"></i>
+																		<span>1:33 pm</span>
+																	</span>
+																</span>
+															</a>
+														</li>
+
+														<li>
+															<a href="#">
+																<img src="assets/images/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar" />
+																<span class="msg-body">
+																	<span class="msg-title">
+																		<span class="blue">Fred:</span>
+																		Vestibulum id penatibus et auctor  ...
+																	</span>
+
+																	<span class="msg-time">
+																		<i class="ace-icon fa fa-clock-o"></i>
+																		<span>10:09 am</span>
+																	</span>
+																</span>
+															</a>
+														</li>
+													</ul>
+												</li>
+
+												<li class="dropdown-footer">
+													<a href="inbox.html">
+														See all messages
+														<i class="ace-icon fa fa-arrow-right"></i>
+													</a>
+												</li>
+											</ul>
+										</div><!/.tab-pane -->
+									<!-- </div>/.tab-content -->
+								<!-- </div>/.tabbable -->
+							<!-- </div>/.dropdown-menu -->
+						<!-- </li>  -->
+
+						<li class="light-blue dropdown-modal user-min">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Jason's Photo" />
+								<span class="user-info">
+									<small>Welcome,</small>
+									Jason
+								</span>
+
+								<i class="ace-icon fa fa-caret-down"></i>
+							</a>
+
+							<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									<a href="#">
+										<i class="ace-icon fa fa-cog"></i>
+										Settings
+									</a>
+								</li>
+
+								<li>
+									<a href="profile.html">
+										<i class="ace-icon fa fa-user"></i>
+										Profile
+									</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="#">
+										<i class="ace-icon fa fa-power-off"></i>
+										Logout
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+<!-- 				<nav role="navigation" class="navbar-menu pull-left collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								Overview
+	  		&nbsp;
+								<i class="ace-icon fa fa-angle-down bigger-110"></i>
+							</a>
+
+							<ul class="dropdown-menu dropdown-light-blue dropdown-caret">
+								<li>
+									<a href="#">
+										<i class="ace-icon fa fa-eye bigger-110 blue"></i>
+										Monthly Visitors
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="ace-icon fa fa-user bigger-110 blue"></i>
+										Active Users
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="ace-icon fa fa-cog bigger-110 blue"></i>
+										Settings
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="#">
+								<i class="ace-icon fa fa-envelope"></i>
+								Messages
+								<span class="badge badge-warning">5</span>
+							</a>
+						</li>
+					</ul>
+
+					<form class="navbar-form navbar-left form-search" role="search">
+						<div class="form-group">
+							<input type="text" placeholder="search" />
+						</div>
+
+						<button type="button" class="btn btn-mini btn-info2">
+							<i class="ace-icon fa fa-search icon-only bigger-110"></i>
+						</button>
+					</form>
+				</nav> -->
+			</div><!-- /.navbar-container -->
+		</div>
+
+		<div class="main-container ace-save-state" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.loadState('main-container')}catch(e){}
+			</script>
+
+			<div id="sidebar" class="sidebar      h-sidebar                navbar-collapse collapse          ace-save-state">
+				<script type="text/javascript">
+					try{ace.settings.loadState('sidebar')}catch(e){}
+				</script>
+
+				<!-- <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+						<button class="btn btn-success">
+							<i class="ace-icon fa fa-signal"></i>
+						</button>
+
+						<button class="btn btn-info">
+							<i class="ace-icon fa fa-pencil"></i>
+						</button>
+
+						<button class="btn btn-warning">
+							<i class="ace-icon fa fa-users"></i>
+						</button>
+
+						<button class="btn btn-danger">
+							<i class="ace-icon fa fa-cogs"></i>
+						</button>
+					</div>
+
+					<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+						<span class="btn btn-success"></span>
+
+						<span class="btn btn-info"></span>
+
+						<span class="btn btn-warning"></span>
+
+						<span class="btn btn-danger"></span>
+					</div>
+				</div> --><!-- /.sidebar-shortcuts -->
+
+				<ul class="nav nav-list">
+					<li class="hover">
+						<a href="#">
+							<i class="menu-icon fa fa-user-o"></i>
+							<span class="menu-text"> Tài khoản </span>
+						</a>
+
+						<b class="arrow"></b>
+						<ul class="submenu">
+							<li class="hover">
+								<a href="quanlyaccount.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+										Quản lý account
+								</a>
+							</li>
+
+							<li class="hover">
+								<a href="quanlythongtinkhachhang.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+										Quản lý khách hàng
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="hover">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-product-hunt "></i>
+								Sản phẩm &amp; Dịch vụ
+						</a>
+						<b class="arrow"></b>
+						<ul class="submenu">
+							<li class="hover">
+								<a href="quanlydanhmuc.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Quản lý danh mục
+								</a>
+							</li>
+
+							<li class="hover">
+								<a href="quanlysanpham.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Quản lý sản phẩm
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="hover">
+								<a href="quanlygoi.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Quản lý gói
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+
+					<li class="hover">
+						<a href="#" class="data-toggle">
+							<i class="menu-icon fa fa-cube"></i>
+								Box &amp; Phân phối
+						</a>
+						<b class="arrow"></b>
+						<ul class="submenu">
+							<li class="hover">
+								<a href="quanlybox.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Quản lý box
+								</a>
+							</li>
+							<li class="hover">
+								<a href="phanphoibox.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Phân phối box
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="hover">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-gift"></i>
+							Coupon &amp; Khuyến mãi 
+						</a>
+						<b class="arrow"></b>
+						<ul class="submenu">
+							<li class="hover">
+								<a href="quanlychiendich.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Quản lý chiến dịch khuyến mãi
+								</a>
+							</li>
+							<li class="hover">
+								<a href="quanlycoup.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Quản lý coupon
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="hover">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-question"></i>
+							Nội dung
+						</a>
+						<b class="arrow"></b>
+						<ul class="submenu">
+							<li class="hover">
+								<a href="quanlycauhoi.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Quản lý câu hỏi
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="hover">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-money"></i>
+							Giao dịch
+						</a>
+						<b class="arrow"></b>
+						<ul class="submenu">
+							<li class="hover">
+								<a href="quanlygiaodich.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Quản lý giao dịch
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul><!-- /.nav-list -->
+			</div>
+
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="page-content">
+						<div class="ace-settings-container" id="ace-settings-container">
+							<div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+								<i class="ace-icon fa fa-cog bigger-130"></i>
+							</div>
+
+							<div class="ace-settings-box clearfix" id="ace-settings-box">
+								<div class="pull-left width-50">
+									<div class="ace-settings-item">
+										<div class="pull-left">
+											<select id="skin-colorpicker" class="hide">
+												<option data-skin="no-skin" value="#438EB9">#438EB9</option>
+												<option data-skin="skin-1" value="#222A2D">#222A2D</option>
+												<option data-skin="skin-2" value="#C6487E">#C6487E</option>
+												<option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+											</select>
+										</div>
+										<span>&nbsp; Choose Skin</span>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-navbar" autocomplete="off" />
+										<label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-sidebar" autocomplete="off" />
+										<label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-breadcrumbs" autocomplete="off" />
+										<label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" autocomplete="off" />
+										<label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-add-container" autocomplete="off" />
+										<label class="lbl" for="ace-settings-add-container">
+											Inside
+											<b>.container</b>
+										</label>
+									</div>
+								</div><!-- /.pull-left -->
+
+								<div class="pull-left width-50">
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-hover" autocomplete="off" />
+										<label class="lbl" for="ace-settings-hover"> Submenu on Hover</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-compact" autocomplete="off" />
+										<label class="lbl" for="ace-settings-compact"> Compact Sidebar</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-highlight" autocomplete="off" />
+										<label class="lbl" for="ace-settings-highlight"> Alt. Active Item</label>
+									</div>
+								</div><!-- /.pull-left -->
+							</div><!-- /.ace-settings-box -->
+						</div><!-- /.ace-settings-container -->
+
+						<div class="page-header">
+							<h1>
+								Quan ly giao dich
+								<small>
+									<i class="ace-icon fa fa-angle-double-right"></i>
+									top menu &amp; navigation
+								</small>
+							</h1>
+						</div><!-- /.page-header -->
+
+						<div class="row">
+							<div class="col-xs-12">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="alert alert-danger">
+										<button type="button" class="close" data-dismiss="alert">
+												<i class="ace-icon fa fa-times"></i>
+											</button>
+
+										<strong>
+												<i class="ace-icon fa fa-times"></i>
+												Oh snap!
+											</strong> Change a few things up and try submitting again.
+										<br />
+									</div>
+
+									<div class="alert alert-block alert-success">
+										<button type="button" class="close" data-dismiss="alert">
+												<i class="ace-icon fa fa-times"></i>
+											</button>
+
+										<p>
+											<strong>
+													<i class="ace-icon fa fa-check"></i>
+													Well done!
+												</strong> You successfully read this important alert message.
+										</p>
+									</div>
+								</div>
+								<!-- /.col -->
+							</div>
+
+								<form id="form-question" class="form-horizontal" role="form">
+									<div class="form-group nagative-answer row" >
+										<label class="col-sm-2 control-label no-padding-right answer-one" for="form-field-tsp">Câu hỏi </label>
+										
+										<div class="col-md-8 ">
+											<div class="input-group col-xs-4 col-md-12 col-sm-5">
+												<textarea name="application-object" style="height:118px;" type="text" id="form-field-tsp" placeholder=" Hãy viết câu trả lời của bạn vào đây                      Ví Dụ: Tôi cảm thấy.............."
+													class="col-xs-10 col-sm-5 form-control"></textarea>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group nagative-answer" >
+										<div class="col-md-8 col-md-offset-2">
+											<div class="widget-box">
+												<div class="widget-header">
+													<h4 class="widget-title">Chọn ảnh minh hoạ</h4>
+												</div>
+
+												<div class="widget-body">
+													<div class="widget-main">
+														<div class="form-group">
+															<div class="col-xs-12">
+																<input type="file" class="id-input-file-2" />
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+
+								<form id="inputForm" class="form-horizontal" role="form">
+									<div class="form-group ">
+										<label class="col-sm-2 control-label no-padding-right answer-one" for="form-field-tsp"> Đáp án trả lời câu hỏi </label>
+
+										<div class="col-sm-3 ">
+											<div class="input-group col-xs-4 col-md-12 col-sm-5">
+												<textarea name="application-object" style="height:118px;" type="text" id="form-field-tsp" placeholder=" Hãy viết câu trả lời của bạn vào đây                      Ví Dụ: Tôi cảm thấy.............."
+													class="col-xs-10 col-sm-5 form-control"></textarea>
+											</div>
+										</div>
+										<div class="col-md-4 ">
+											<div class="widget-box">
+												<div class="widget-header">
+													<h4 class="widget-title">Chọn ảnh minh hoạ</h4>
+												</div>
+
+												<div class="widget-body">
+													<div class="widget-main">
+														<div class="form-group">
+															<div class="col-xs-12">
+																<input type="file" class="id-input-file-2" />
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-2">
+											<div class="col-md-7">
+												<button class="btn btn-success add-answer" type="button">
+												<i class="ace-icon fa fa-su bigger-110"></i>
+												Add 
+											</button>
+											</div>
+										</div>
+									</div>
+									<div class="test-one"></div>
+									
+						</form>
+
+						<div class="clearfix form-actions">
+							<div class="col-md-offset-3 col-md-9">
+								<button class="btn btn-info" type="submit">
+												<i class="ace-icon fa fa-check bigger-110"></i>
+												Submit
+											</button> &nbsp; &nbsp; &nbsp;
+								<button class="btn" type="reset">
+												<i class="ace-icon fa fa-undo bigger-110"></i>
+												Reset
+											</button>
+							</div>
+						</div>
+					<div class="hr hr-24"></div>
+
+								<!-- PAGE CONTENT BEGINS -->
+<!-- =============table=======================-->
+<div class="row">
+								<table id="grid-table"></table>
+
+								<div id="grid-pager"></div>
+
+								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+<!-- ==================================== -->
+								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+			</div><!-- /.main-content -->
+
+			<div class="footer">
+				<div class="footer-inner">
+					<div class="footer-content">
+						<span class="bigger-120">
+							<span class="blue bolder">Ace</span>
+							Application &copy; 2013-2014
+						</span>
+
+						&nbsp; &nbsp;
+						<span class="action-buttons">
+							<a href="#">
+								<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+							</a>
+
+							<a href="#">
+								<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+							</a>
+
+							<a href="#">
+								<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- page specific plugin scripts -->
+
+	<!-- ace scripts -->
+	<script src="assets/js/ace-elements.min.js"></script>
+	<script src="assets/js/ace.min.js"></script>
+	<script src="assets/js/jquery.jqGrid.min.js"></script>
+	<script src="assets/js/grid.locale-en.js"></script>
+	<script src="assets/js/jquery.bootstrap-duallistbox.min.js"></script>
+	<script src="assets/js/bootstrap-tag.min.js"></script>
+	<script src="assets/js/bootstrapValidator.min.js"></script>
+	<script src="assets/js/bootstrap-multiselect.min.js"></script>
+	<script src="assets/js/bootstrap-datepicker.min.js"></script>
+
+
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+			 var grid_data = [{
+            id: "1",
+            noidungcauhoi: "abcd",
+            ngaytao: '22/12/2016',
+           	// img: 'ace-master/ace-master/assets/images/mor.jpg'
+        },  {
+        	id: "2",
+            noidungcauhoi: "efg",
+            ngaytao: '23/12/2016',
+           	// img: 'ace-master/ace-master/assets/images/mor.jpg'
+        },  {
+        	id: "3",
+            noidungcauhoi: "hjk",
+            ngaytao: '25/12/2016',
+           	// img: 'ace-master/ace-master/assets/images/mor.jpg'
+        },  {
+        	id: "4",
+            noidungcauhoi: "lmn",
+            ngaytao: '21/12/2016',
+           	// img: 'ace-master/ace-master/assets/images/mor.jpg'
+        },  {
+        	id: "5",
+            noidungcauhoi: "opr",
+            ngaytao: '26/12/2016',
+           	// img: 'ace-master/ace-master/assets/images/mor.jpg'
+        },  {
+        	id: "6",
+            noidungcauhoi: "tvu",
+            ngaytao: '29/12/2016',
+           	// img: 'ace-master/ace-master/assets/images/mor.jpg'
+        },  {
+        	id: "7",
+            noidungcauhoi: "xyz",
+            ngaytao: '30/12/2016',
+           	// img: 'ace-master/ace-master/assets/images/mor.jpg'
+        },  {
+        	id: "8",
+            noidungcauhoi: "bcv",
+            ngaytao: '24/12/2016',
+           	// img: 'ace-master/ace-master/assets/images/mor.jpg'
+        },  {
+        	id: "9",
+            noidungcauhoi: "swe",
+            ngaytao: '27/12/2016',
+           	// img: 'ace-master/ace-master/assets/images/mor.jpg'
+        },  {
+        	id: "10",
+            noidungcauhoi: "asb",
+            ngaytao: '28/12/2016',
+           	// img: 'ace-master/ace-master/assets/images/mor.jpg'
+        },];
+			
+			var subgrid_data = 
+			[
+			 {id:"1", noidungtraloi:"sub grid item 1", img: 'mor.jpg'},
+			 {id:"2", noidungtraloi:"sub grid item 2", img: 'mor.jpg'},
+			 {id:"3", noidungtraloi:"sub grid item 3", img: 'mor.jpg'},
+			 {id:"4", noidungtraloi:"sub grid item 4", img: 'mor.jpg'},
+			 {id:"5", noidungtraloi:"sub grid item 5", img: 'mor.jpg'},
+			 {id:"6", noidungtraloi:"sub grid item 6", img: 'mor.jpg'},
+			 {id:"7", noidungtraloi:"sub grid item 7", img: 'mor.jpg'},
+			 {id:"8", noidungtraloi:"sub grid item 8", img: 'mor.jpg'}
+			];
+			
+			jQuery(function($) {
+				var grid_selector = "#grid-table";
+				var pager_selector = "#grid-pager";
+				
+				
+				var parent_column = $(grid_selector).closest('[class*="col-"]');
+				//resize to fit page size
+				$(window).on('resize.jqGrid', function () {
+					$(grid_selector).jqGrid( 'setGridWidth', parent_column.width() );
+			    })
+				
+				//resize on sidebar collapse/expand
+				$(document).on('settings.ace.jqGrid' , function(ev, event_name, collapsed) {
+					if( event_name === 'sidebar_collapsed' || event_name === 'main_container_fixed' ) {
+						//setTimeout is for webkit only to give time for DOM changes and then redraw!!!
+						setTimeout(function() {
+							$(grid_selector).jqGrid( 'setGridWidth', parent_column.width() );
+						}, 20);
+					}
+			    })
+				
+				//if your grid is inside another element, for example a tab pane, you should use its parent's width:
+				/**
+				$(window).on('resize.jqGrid', function () {
+					var parent_width = $(grid_selector).closest('.tab-pane').width();
+					$(grid_selector).jqGrid( 'setGridWidth', parent_width );
+				})
+				//and also set width when tab pane becomes visible
+				$('#myTab a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+				  if($(e.target).attr('href') == '#mygrid') {
+					var parent_width = $(grid_selector).closest('.tab-pane').width();
+					$(grid_selector).jqGrid( 'setGridWidth', parent_width );
+				  }
+				})
+				*/
+				
+				
+			
+			
+			
+				jQuery(grid_selector).jqGrid({
+					//direction: "rtl",
+			
+					//subgrid options
+					subGrid : true,
+					//subGridModel: [{ name : ['No','Item Name','Qty'], width : [55,200,80] }],
+					//datatype: "xml",
+					subGridOptions : {
+						plusicon : "ace-icon fa fa-plus center bigger-110 blue",
+						minusicon  : "ace-icon fa fa-minus center bigger-110 blue",
+						openicon : "ace-icon fa fa-chevron-right center orange"
+					},
+					//for this example we are using local data
+					subGridRowExpanded: function (subgridDivId, rowId) {
+						var subgridTableId, pagerId;
+						subgridTableId = subgridDivId + "_t";
+						pagerId = "p_" + subgridTableId;
+						$("#" + subgridDivId).html("<table id='" + subgridTableId + "'></table><div id='"+pagerId+"' class='scroll'>");
+						$("#" + subgridTableId).jqGrid({
+							datatype: 'local',
+							data: subgrid_data,
+							colNames: [' ','Nội dung câu trả lời','Hỉnh ảnh minh họa'],
+							colModel: [
+							{name:'myac',index:'', width:80, fixed:true, sortable:false, resize:false,
+							formatter:'actions', 
+							formatoptions:{ 
+								keys:true,
+								//delbutton: false,//disable delete button
+								
+								delOptions:{recreateForm: true, beforeShowForm:beforeDeleteCallback},
+								//editformbutton:true, editOptions:{recreateForm: true, beforeShowForm:beforeEditCallback}
+							}
+						},
+								{ name: 'noidungtraloi', width: 150, editable: true, edittype: 'text', editrules: {required: true}},
+								{ name: 'img', width: 200, formatter: function jqGridFormatter(cell, options, row){
+   											return "<a href='assets/images/" + cell + "'>Xem ảnh</a>";
+										}, editable: true, edittype: 'file',
+
+								// editrules: { edithidden: true },
+								search: false}
+							],
+					// 	// height: '100%',
+					// 	pager: pagerId,
+					// 	viewrecords: false,
+					// 	pgbuttons: false,
+     //      				rowNum:10,
+     //      				sortname: 'num',
+     //      				sortorder: "asc",
+     //      				loadComplete : function() {
+					// 	var table = this;
+					// 	setTimeout(function(){
+					// 		styleCheckbox(table);
+							
+					// 		updateActionIcons(table);
+					// 		updatePagerIcons(table);
+					// 		enableTooltips(table);
+					// 	}, 0);
+					// },
+			
+					editurl: "./dummy.php",//nothing is saved
+						});
+					jQuery("#" + subgridTableId).jqGrid('navGrid',"#" + pagerId,
+							{ 	//navbar options
+						edit: false,
+						editicon : 'ace-icon fa fa-pencil blue',
+						add: false,
+						addicon : 'ace-icon fa fa-plus-circle purple',
+						del: false,
+						delicon : 'ace-icon fa fa-trash-o red',
+						search: false,
+						searchicon : 'ace-icon fa fa-search orange',
+						refresh: false,
+						refreshicon : 'ace-icon fa fa-refresh green',
+						view: true,
+						viewicon : 'ace-icon fa fa-search-plus grey',
+						}
+					)
+					},
+					
+
+					data: grid_data,
+				datatype: "local",
+				height: 250,
+				colNames:['Nội dung câu hỏi', 'Ngày tạo', 'Hình ảnh minh họa'],
+				colModel:[{
+					name:'noidungcauhoi',
+					index:'noidungcauhoi',
+					width:80,
+					editable: true,
+					edittype: 'text',
+					editrules: {
+						required: true
+					},
+					search: true,
+					stype: 'text',
+					searchoptions: {
+						clearSearch: false
+					}
+				}, {
+					name:'ngaytao',
+					index:'ngaytao',
+					width:50,
+					editable:true,
+					sorttype: "date",
+					unformat: pickDate,
+					editrules: {
+						required: true,
+					},
+					search: true,
+					stype: 'text',
+					searchoptions: {
+						clearSearch: false
+					}
+				},  {
+					name: 'img',
+					index: 'img',
+					width: 480,
+					edittype: 'file',
+					fixed: true,
+					editable: true,
+					formatter: function(){
+						return "<img class='img-detail' src='assets/images/mor.jpg'>"
+					},
+					editrules: {
+						edithidden: true
+					},
+					search: false,
+					hidden: true,
+					viewable: true
+				}], 
+			
+					viewrecords : true,
+					rowNum:10,
+					rowList:[10,20,30],
+					pager : pager_selector,
+					altRows: true,
+					//toppager: true,
+					
+					multiselect: true,
+					//multikey: "ctrlKey",
+			        multiboxonly: true,
+			
+					loadComplete : function() {
+						var table = this;
+						setTimeout(function(){
+							styleCheckbox(table);
+							
+							updateActionIcons(table);
+							updatePagerIcons(table);
+							enableTooltips(table);
+						}, 0);
+					},
+			
+					editurl: "./dummy.php",//nothing is saved
+					caption: "jqGrid with inline editing"
+			
+					//,autowidth: true,
+			
+			
+					/**
+					,
+					grouping:true, 
+					groupingView : { 
+						 groupField : ['name'],
+						 groupDataSorted : true,
+						 plusicon : 'fa fa-chevron-down bigger-110',
+						 minusicon : 'fa fa-chevron-up bigger-110'
+					},
+					caption: "Grouping"
+					*/
+			
+				});
+				// jQuery("#grid-table").jqGrid('navGrid','#grid-pager',{add:false,edit:true,del:false});
+				$(window).triggerHandler('resize.jqGrid');//trigger window resize to make the grid get the correct size
+				
+				
+			
+				//enable search/filter toolbar
+				//jQuery(grid_selector).jqGrid('filterToolbar',{defaultSearch:true,stringResult:true})
+				//jQuery(grid_selector).filterToolbar({});
+			
+			
+				//switch element when editing inline
+				function aceSwitch( cellvalue, options, cell ) {
+					setTimeout(function(){
+						$(cell) .find('input[type=checkbox]')
+							.addClass('ace ace-switch ace-switch-5')
+							.after('<span class="lbl"></span>');
+					}, 0);
+				}
+				//enable datepicker
+				function pickDate( cellvalue, options, cell ) {
+					setTimeout(function(){
+						$(cell) .find('input[type=text]')
+							.datepicker({format:'yyyy-mm-dd' , autoclose:true}); 
+					}, 0);
+				}
+			
+			
+				//navButtons
+				jQuery(grid_selector).jqGrid('navGrid',pager_selector,
+					{ 	//navbar options
+						edit: true,
+						editicon : 'ace-icon fa fa-pencil blue',
+						add: false,
+						addicon : 'ace-icon fa fa-plus-circle purple',
+						del: true,
+						delicon : 'ace-icon fa fa-trash-o red',
+						search: true,
+						searchicon : 'ace-icon fa fa-search orange',
+						refresh: true,
+						refreshicon : 'ace-icon fa fa-refresh green',
+						view: true,
+						viewicon : 'ace-icon fa fa-search-plus grey',
+					},
+					{
+						//edit record form
+						//closeAfterEdit: true,
+						//width: 700,
+						recreateForm: true,
+						beforeShowForm : function(e) {
+							var form = $(e[0]);
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+							style_edit_form(form);
+						}
+					},
+					{
+						//new record form
+						//width: 700,
+						closeAfterAdd: true,
+						recreateForm: true,
+						viewPagerButtons: false,
+						beforeShowForm : function(e) {
+							var form = $(e[0]);
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar')
+							.wrapInner('<div class="widget-header" />')
+							style_edit_form(form);
+						}
+					},
+					{
+						//delete record form
+						recreateForm: true,
+						beforeShowForm : function(e) {
+							var form = $(e[0]);
+							if(form.data('styled')) return false;
+							
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+							style_delete_form(form);
+							
+							form.data('styled', true);
+						},
+						onClick : function(e) {
+							//alert(1);
+						}
+					},
+					{
+						//search form
+						recreateForm: true,
+						afterShowSearch: function(e){
+							var form = $(e[0]);
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+							style_search_form(form);
+						},
+						afterRedraw: function(){
+							style_search_filters($(this));
+						}
+						,
+						multipleSearch: true,
+						/**
+						multipleGroup:true,
+						showQuery: true
+						*/
+					},
+					{
+						//view record form
+						recreateForm: true,
+						beforeShowForm: function(e){
+							var form = $(e[0]);
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+						}
+					}
+				)
+				
+					
+			
+				
+				function style_edit_form(form) {
+					//enable datepicker on "sdate" field and switches for "stock" field
+					form.find('input[name=ngaytao]').datepicker({format:'dd/mm/yyyy' , autoclose:true})
+				
+					// form.find('input[name=stock]').addClass('ace ace-switch ace-switch-5').after('<span class="lbl"></span>');
+							   //don't wrap inside a label element, the checkbox value won't be submitted (POST'ed)
+							  //.addClass('ace ace-switch ace-switch-5').wrap('<label class="inline" />').after('<span class="lbl"></span>');
+			
+							
+					//update buttons classes
+					var buttons = form.next().find('.EditButton .fm-button');
+					buttons.addClass('btn btn-sm').find('[class*="-icon"]').hide();//ui-icon, s-icon
+					buttons.eq(0).addClass('btn-primary').prepend('<i class="ace-icon fa fa-check"></i>');
+					buttons.eq(1).prepend('<i class="ace-icon fa fa-times"></i>')
+					
+					buttons = form.next().find('.navButton a');
+					buttons.find('.ui-icon').hide();
+					buttons.eq(0).append('<i class="ace-icon fa fa-chevron-left"></i>');
+					buttons.eq(1).append('<i class="ace-icon fa fa-chevron-right"></i>');		
+				}
+			
+				function style_delete_form(form) {
+					var buttons = form.next().find('.EditButton .fm-button');
+					buttons.addClass('btn btn-sm btn-white btn-round').find('[class*="-icon"]').hide();//ui-icon, s-icon
+					buttons.eq(0).addClass('btn-danger').prepend('<i class="ace-icon fa fa-trash-o"></i>');
+					buttons.eq(1).addClass('btn-default').prepend('<i class="ace-icon fa fa-times"></i>')
+				}
+				
+				function style_search_filters(form) {
+					form.find('.delete-rule').val('X');
+					form.find('.add-rule').addClass('btn btn-xs btn-primary');
+					form.find('.add-group').addClass('btn btn-xs btn-success');
+					form.find('.delete-group').addClass('btn btn-xs btn-danger');
+				}
+				function style_search_form(form) {
+					var dialog = form.closest('.ui-jqdialog');
+					var buttons = dialog.find('.EditTable')
+					buttons.find('.EditButton a[id*="_reset"]').addClass('btn btn-sm btn-info').find('.ui-icon').attr('class', 'ace-icon fa fa-retweet');
+					buttons.find('.EditButton a[id*="_query"]').addClass('btn btn-sm btn-inverse').find('.ui-icon').attr('class', 'ace-icon fa fa-comment-o');
+					buttons.find('.EditButton a[id*="_search"]').addClass('btn btn-sm btn-purple').find('.ui-icon').attr('class', 'ace-icon fa fa-search');
+				}
+				
+				function beforeDeleteCallback(e) {
+					var form = $(e[0]);
+					if(form.data('styled')) return false;
+					
+					form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+					style_delete_form(form);
+					
+					form.data('styled', true);
+				}
+				
+				function beforeEditCallback(e) {
+					var form = $(e[0]);
+					form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+					style_edit_form(form);
+				}
+			
+			
+			
+				//it causes some flicker when reloading or navigating grid
+				//it may be possible to have some custom formatter to do this as the grid is being created to prevent this
+				//or go back to default browser checkbox styles for the grid
+				function styleCheckbox(table) {
+				/**
+					$(table).find('input:checkbox').addClass('ace')
+					.wrap('<label />')
+					.after('<span class="lbl align-top" />')
+			
+			
+					$('.ui-jqgrid-labels th[id*="_cb"]:first-child')
+					.find('input.cbox[type=checkbox]').addClass('ace')
+					.wrap('<label />').after('<span class="lbl align-top" />');
+				*/
+				}
+				
+			
+				//unlike navButtons icons, action icons in rows seem to be hard-coded
+				//you can change them like this in here if you want
+				function updateActionIcons(table) {
+					/**
+					var replacement = 
+					{
+						'ui-ace-icon fa fa-pencil' : 'ace-icon fa fa-pencil blue',
+						'ui-ace-icon fa fa-trash-o' : 'ace-icon fa fa-trash-o red',
+						'ui-icon-disk' : 'ace-icon fa fa-check green',
+						'ui-icon-cancel' : 'ace-icon fa fa-times red'
+					};
+					$(table).find('.ui-pg-div span.ui-icon').each(function(){
+						var icon = $(this);
+						var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+						if($class in replacement) icon.attr('class', 'ui-icon '+replacement[$class]);
+					})
+					*/
+				}
+				
+				//replace icons with FontAwesome icons like above
+				function updatePagerIcons(table) {
+					var replacement = 
+					{
+						'ui-icon-seek-first' : 'ace-icon fa fa-angle-double-left bigger-140',
+						'ui-icon-seek-prev' : 'ace-icon fa fa-angle-left bigger-140',
+						'ui-icon-seek-next' : 'ace-icon fa fa-angle-right bigger-140',
+						'ui-icon-seek-end' : 'ace-icon fa fa-angle-double-right bigger-140'
+					};
+					$('.ui-pg-table:not(.navtable) > tbody > tr > .ui-pg-button > .ui-icon').each(function(){
+						var icon = $(this);
+						var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+						
+						if($class in replacement) icon.attr('class', 'ui-icon '+replacement[$class]);
+					})
+				}
+			
+				function enableTooltips(table) {
+					$('.navtable .ui-pg-button').tooltip({container:'body'});
+					$(table).find('.ui-pg-div').tooltip({container:'body'});
+				}
+			
+				//var selr = jQuery(grid_selector).jqGrid('getGridParam','selrow');
+			
+				$(document).one('ajaxloadstart.page', function(e) {
+					$.jgrid.gridDestroy(grid_selector);
+					$('.ui-jqdialog').remove();
+				});
+			});
+
+		</script>
+			<script type="text/javascript">
+			$('.date-picker').datepicker({
+					autoclose: true,
+					todayHighlight: true
+				})
+				//show datepicker when clicking on the icon
+				.next().on(ace.click_event, function(){
+					$(this).prev().focus();
+				});
+		</script>
+		<script>
+			jQuery(function($) {
+					
+					console.log("dang tes");
+					//$('.nagative-answer').show();
+					var form_answer = '<div class="form-group nagative-answer"><div class="col-md-2"></div><div class="col-sm-3"><div class="input-group col-xs-4 col-md-12 col-sm-5"><textarea name="application-object" style="height:118px;" type="text" id="form-field-tsp" placeholder=" Hãy viết câu trả lời của bạn vào đây                      Ví Dụ: Tôi cảm thấy.............."class="col-xs-10 col-sm-5 form-control"></textarea></div></div><div <div class="col-md-4 "><div class="widget-box"><div class="widget-header"><h4 class="widget-title">Chọn ảnh minh hoạ</h4></div><div class="widget-body"><div class="widget-main"><div class="form-group"><div class="col-xs-12"><input type="file" class="id-input-file-2" /></div></div></div></div></div></div><div class="col-md-2"><div class="col-md-1"><button class="btn btn-danger btn-sm delete-answer" type="delete"><i class="ace-icon fa fa-trash-o bigger-200" style="width:38px;"></i></button></div></div></div>';
+					/*$('.add-answer').click(function(){
+						
+						$('.nagative-answer').show();
+						console.log("dangtest");
+					});*/
+					$(document).on("click", ".add-answer", function(){
+						$("#inputForm").append(form_answer);
+
+						$('.id-input-file-2').ace_file_input({
+							no_file:'Không có tệp nào được chọn',
+							btn_choose:'Chọn',
+							btn_change:'Thay đổi',
+							droppable:false,
+							onchange:null,
+							thumbnail:false //| true | large
+					//whitelist:'gif|png|jpg|jpeg'
+					//blacklist:'exe|php'
+					//onchange:''
+					//
+				});
+					})
+					$(document).on("click", ".delete-answer", function(){
+						$(this).parent().parent().parent().remove();
+					})
+				});
+
+			 $('.id-input-file-2').ace_file_input({
+					no_file:'Không có tệp nào được chọn',
+					btn_choose:'Chọn',
+					btn_change:'Thay đổi',
+					droppable:false,
+					onchange:null,
+					thumbnail:false //| true | large
+					//whitelist:'gif|png|jpg|jpeg'
+					//blacklist:'exe|php'
+					//onchange:''
+					//
+				});
+		</script>
+	</body>
+</html>

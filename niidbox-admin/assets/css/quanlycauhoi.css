@@ -1,0 +1,9 @@
+.ViewTable .CaptionTD{
+	width: 30%;
+}
+.ui-widget{
+	padding-left: 12px;
+}
+#trv_myac {
+    display: none;
+}
